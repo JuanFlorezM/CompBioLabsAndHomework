@@ -1,0 +1,13 @@
+Most useful command lines
+
+		$cd 		-changes the working directory
+		$pwd		- prints the full pathname of the current work directory
+		$cd ..		- moves the working directory one level up
+		$ls		- lists every file in the folder
+		$grep		- matches finds expressions that match the given pattern
+		$git init	- creates a git repository in the current directory
+		$git status	- shows the current status of the files being tracked by git
+		$git add	- stages a file to be commited
+		$git commit	- adds a snap shot of the current work to the .git repository
+		$git push	- pushes the current work saved the repository to github
+		
