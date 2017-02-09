@@ -18,7 +18,7 @@
     PennyIV <- penny[4]
     LennyIV <- Lenny[4]
   # Lab step#10 make a matrix from the previous 5 vectors we made before using the cbind function
-    AllRankings <- cbind( penny, jenny, Lenny, Stewie, myself)st
+    AllRankings <- cbind( penny, jenny, Lenny, Stewie, myself)
   # Lab step#11    str(PennyIV)     gives back the integer 3
                   #str(penny)       gives back vector or list of rankings
                   #str(AllRankings) gives back an entire matrix of numbers
