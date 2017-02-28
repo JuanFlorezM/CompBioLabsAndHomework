@@ -33,3 +33,38 @@
     
   #Lab step#14 create vector of characteres representing the episode numbers
     Episodenames <- c("I","II","III","IV","V","VI","VII")
+  #Lab step15
+    row.names(RankingsDataFrame1) <- Episodenames        #use the row.names function to add the movie titles to the data objects
+    row.names(RankingsDataFrame2) <- Episodenames
+    row.names(AllRankings) <- Episodenames
+  #Lab step16 
+    AllRankings[3,]
+  #Lab step 17 accessing the fourth column of a data frame
+    RankingsDataFrame1[,4]
+  #Lab step 18, accessing the rankings for episode V
+    AllRankings["V",]
+  #Lab sstep 19 accessing Penny's rankings for Episode II
+    AllRankings["II","jenny"]
+  #Lab step 20 accessing everyone's rankings for episodes IV VI
+    AllRankings[4:6,]
+  #Lab step 21 accessing everyones rankings for episodes II, V, and VII
+    AllRankings[c(2,5,7),]
+  #Lab step 22 accessing Penny's, Jenny's, and Stewie's rankings for episodes IV and VI
+    AllRankings[c("IV", "VI"), c("penny", "jenny", "Stewie")]
+    
+  #Lab step 23 switching Lenny's Rankings for episodes II and V
+    AllRankings
+    i <-AllRankings[2,3] 
+    j <- AllRankings[5,3]
+    AllRankings[5,3] <- i
+    AllRankings[2,3] <- j
+  #Lab step 24 using row and column names for indexing and accessing specific elements
+    AllRankings["III", "penny"]
+    RankingsDataFrame2["III","penny"]
+  #Lab step 25 undoing the changes made in step 23 using row and column names
+    AllRankings["II", "Lenny"] <- i
+    AllRankings["V", "Lenny"] <- j
+  #Lab ste 26 redoing the switch from step 23 with the $ operator
+    RankingsDataFrame1$Lenny[2] <- j
+    RankingsDataFrame1$Lenny[5] <- i
+    RankingsDataFrame1        # just to prove it works
